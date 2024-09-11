@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/newproject.css">
+    <title>Subir Fotos</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Nuevo Proyecto</h1>
+            <!-- Formulario para enviar las imagenes a la base de datos -->
+            <form id="from" action="../../server/php/save.php" method="post" enctype="multipart/form-data">
+            <input type="text" placeholder="Nombre del evento" name="evento">
+            <div class="drop" id="drop">
+                <h2>Arrastrar imagenes</h2>
+                <p>o</p>
+                <button class="select-file" type="button">Seleccionar</button>
+                <input type="file" name="imagen" id="image" hidden multiple>
+            </div>
+            <button class="send" id="send" type="submit">EVIAR</button>
+            </form>
+        </div>
+        <div id="preview"></div>
+    </main>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
