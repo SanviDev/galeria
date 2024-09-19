@@ -15,11 +15,12 @@
             <!-- Formulario para enviar las imagenes a la base de datos -->
             <form id="from" action="../../server/php/save.php" method="post" enctype="multipart/form-data">
             <input type="text" placeholder="Nombre del evento" name="evento">
+            <input type="date" name="fecha" id="fecha">
             <div class="drop" id="drop">
                 <h2>Arrastrar imagenes</h2>
                 <p>o</p>
                 <button class="select-file" type="button">Seleccionar</button>
-                <input type="file" name="imagen" id="image" hidden multiple>
+                <input type="file" name="imagen[]" id="image" hidden multiple required>
             </div>
             <button class="send" id="send" type="submit">EVIAR</button>
             </form>

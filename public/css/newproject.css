@@ -79,6 +79,11 @@ input {
     border-radius: 3px;
 }
 
+.active {
+    background-color: #94d8fa;
+    color: #111111;
+}
+
 button {
     height: 35px;
     border: none;
@@ -102,4 +107,12 @@ button {
     &:hover {
         background-color: #4ca02b;
     }
+}
+#preview {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
